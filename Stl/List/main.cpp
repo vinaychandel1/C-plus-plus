@@ -89,6 +89,12 @@ showlist(list2);
     if(position!=list2.end()){
     cout<<"\nElement found at position:"<<distance( list2.begin(), position ) + 1;
             }
+    
+    //merge lists
+
+    cout<<"\nMerge list2 with list1:";
+    list1.merge(list2);
+    showlist(list1);
 
 return 0;
 }
