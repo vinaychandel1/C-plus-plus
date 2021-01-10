@@ -1,0 +1,20 @@
+#include <new>
+#include <iostream>
+using namespace std;
+class A {
+  public:
+    A() { cout << "A::A()" << endl; }
+    ~A() { cout << "A::~A()" << endl; }
+};
+int main () {
+  char* p = new char[sizeof(A)];
+  A* ap = new (p) A;
+  ap->A::~A();
+  delete [] p;
+}
+
+/*The statement A* ap = new (p) A dynamically creates a new object of type A 
+not in the free store but in the memory allocated by p.
+ The statement delete [] p will delete the storage allocated by p, but the run time
+  will still believe that the object pointed to by ap still exists until you explicitly call 
+  the destructor of A (with the statement ap->A::~A())*/
