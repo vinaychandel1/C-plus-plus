@@ -17,3 +17,4 @@ int main()
     return 0;
 }
  
+//geeksforgeeks.org/builtin-functions-gcc-compiler/
