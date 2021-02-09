@@ -15,6 +15,21 @@ void rotateArr(register int arr[], register int d, register int n)
 }
 
 
-/**/
+/*void reverse(int nums[],int start,int end)
+{
+    while(start<end){
+    swap(nums[start],nums[end]);
+            start++;
+            end--;
+}
+}
+void rotateArr( int nums[], int d, int n)
+{ int k=d%n;
+    
+        reverse(nums,0,k-1);
+        reverse(nums,k,n-1);
+        reverse(nums,0,n-1);
+}        
+*/
 
 
