@@ -1,0 +1,75 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main () {
+  if (~0 == 1) cout << "YES" << endl ; 
+  else cout << "NO"<< endl ; 
+}
+
+#include<bits/stdc++.h>
+using namespace std;
+int main () {
+  string s('G') ; 
+  cout << s.size() << endl ;  
+  return 0;
+}
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main () {
+  char str1[]= "Geeksfor\0Geeks";
+  string s(str1);
+  cout << s << str1 << endl ; 
+  return 0;
+}
+
+#include<bits/stdc++.h>
+using namespace std;
+int main () {
+  cout << 1 << 2 << (1<<2)  << endl ; 
+  return 0 ; 
+}
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main () {
+int n = 4 ; 
+if(n&(n-1)==0) cout << "Power of 2" ; 
+else cout << "Not a power of two"; 
+ return 0 ; 
+}
+
+
+
+Use PUMA' S REBL TAC. ( spell "REBL" as if "REBEL").
+
+(Note: all operators with associativity not specified is left to right).
+
+P - Primary
+
+U - Unary
+
+M - Multiplicative
+
+A - Additive
+
+S- Shift
+
+R- Relational
+
+E- Equality
+
+B- BitWise ( & > ^ > |)
+
+L- Logical ( logical && > logical ||)
+
+and the last three operators are
+
+T- Ternary
+
+A- Assignment
+
+C- Comma
+
+If you need a shortcut for Assosiativity then "AUTo rides in the right side", meaning Assignment, Unary and Ternary operators are Right to Left, O is added for completion)
