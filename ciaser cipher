@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+string ceaser(string text,int s){
+   
+ string result = ""; 
+  
+  
+    for (int i=0;i<text.length();i++) 
+    { 
+        if(isalpha(text[i])==0) 
+          result+=char(text[i]);
+          else{
+        if (isupper(text[i])) 
+            result += char(int(text[i]+s-65)%26 +65); 
+  
+    
+    else
+        result += char(int(text[i]+s-97)%26 +97); 
+    } 
+    }
+  
+   
+    return result; 
+}
+
+int main()
+{   int n,k;
+    string s,ans;
+    cin >>s >> k;
+    k=k%26;
+   ans=ceaser(s,k);
+    cout<<ans;
+    return 0;
+}
