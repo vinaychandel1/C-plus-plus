@@ -1,3 +1,4 @@
+<h1>memset in C++:</h1>
 <h3>Converts the value ch to unsigned char and copies it into each of the first n characters of the object pointed to by str[]. 
   If the object is not trivially-copyable (e.g., scalar, array, or a C-compatible struct), the behavior is undefined. 
   If n is greater than the size of the object pointed to by str, the behavior is undefined.<h3>
