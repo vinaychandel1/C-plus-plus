@@ -42,3 +42,8 @@ int main()
 
 	return 0;
 }
+/*The priority queue gquiz is :     1    5    10    20    30
+
+gquiz.size() : 5
+gquiz.top() : 1
+gquiz.pop() :     5    10    20    30*/
