@@ -37,7 +37,7 @@ using namespace std;
 
               int i;
 
-              Student E[10];           //Statement 3 : Creating Array of 3 Student
+              Student E[10];           //Statement 3 : Creating Array of 10 Student
 
               for(i=0;i<10;i++)
               {
